@@ -1,0 +1,231 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:calibr;
+}
+body,html{
+  width: 100%;
+  height: 100%
+}
+nav{
+  width: 100%;
+  height: 100px;
+  
+  background-image: linear-gradient( to right,#f1f1f1,#FF5733);
+
+}
+nav .navbar-brand img{
+      float: left;
+      width:90px;
+      height: auto;
+}
+nav ul{
+  float: right;
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 8px 20px;
+}
+nav ul li a.active,a:hover{
+  background: #de3747;
+}
+#checkbtn{
+  float:right;
+  line-height: 80px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+#check{
+  display: none;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+
+@media(max-width: 530px){
+    #checkbtn{
+      display: block;
+    }
+    nav ul{
+      width: 100%;
+      height: 100%;
+      background: #d68910;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      transition: .5s;
+    }
+    nav ul li{
+      display: block;
+      text-align: center;
+      line-height: 50px;
+      margin: 15px;
+      
+
+    }
+  }
+/*.menu-bar{
+  background-image: linear-gradient( to right,#f1f1f1,#FF5733);
+}
+.nav-link{
+  font-size: 16px;
+  color: #fff !important;
+  margin: 2px;
+}
+.navbar-nav{
+text-align: right;
+}
+
+.menu-bar .navbar-toggler{
+  padding-right: 0;
+  outline: none;
+  border:none;
+}*/
+
+.banner {
+ height: 120vh;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/KAA7.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+}
+.banner h6{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 50%;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px white;
+  color: white;
+}
+.banner h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px white;
+  text-transform:uppercase;
+  text-align: center;
+    color: white;
+}
+.banner p{
+  font-size: 25px;
+  color: #eee;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+/*.banner.container{     
+      padding:30px 0px;
+      margin: -50px 6% 50px;
+      background: rgba(0,0,0,0.1);*/
+}
+.banner .container label{
+  color: #fff;
+ }
+input[type=text], input[type=password] {
+  width: 15%;
+  padding: 8px;
+  margin:  0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+ 
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+ }
+
+ .banner .container{
+  padding: 30px 0;
+  margin: -50px 6% 50px;
+  padding-right: 20px;
+  /*background: rgba(0,0,0,0.1);*/
+   background-image: linear-gradient( to right,#f1f1f1,#FF5733);
+}
+nav .banner .search-job .form-control{
+  max-width: 100px;
+  display: inline-flex;margin: 10px 5px;
+  border-radius: 0;
+  box-shadow: none !important;
+  border:none!important;
+}
+
+nav .banner .container select {  
+  flex: 1;
+  padding: 0.5em;
+  color: #000;
+  cursor: pointer;
+}
+nav .banner .container select::after{
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 25s all ease;
+    color: #23b499;
+
+} 
+
+
+nav .banner.container select: hover:: after{
+  background: #FF5733;
+
+
+} 
+/*.search-job .btn-primary{
+  border-radius: 0;
+  box-shadow: none;
+  border:none;
+  display: inline-flex;
+  margin: 5px;
+  padding: 5px 20px;*/
+}
+.registerbtn{
+  background-color: #FF5733;
+  color: white;
+  padding: 8px;
+  margin:  0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+  float: right;
+    top: 55%;
+  
+}
+.registerbtn button{
+  display: block;
+  border-top: 5;
+}
+
+.registerbtn:hover{
+  opacity: 1;
+  background: #de3747;
+
+}
+  a{
+  color: dodgerblue;
+}
+a .active,a:hover{
+  border:1px solid white;
+  transform: 5s;
+}
+  
